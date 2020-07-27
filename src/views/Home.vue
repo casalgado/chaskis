@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="home">
+    <TheBinder />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import TheBinder from "../components/TheBinder";
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: { TheBinder },
 };
 </script>
+<style scoped>
+#home {
+  width: 70%;
+  margin: 0 auto;
+  background-color: papayawhip;
+}
+</style>
