@@ -1,27 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/">Home</router-link>
-    </div>
+    <TheNavBar />
     <router-view />
   </div>
 </template>
-
+<script>
+import TheNavBar from "./components/TheNavBar";
+export default {
+  name: "App",
+  components: { TheNavBar },
+};
+</script>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-}
-
-#nav {
-}
-
-#nav a {
-}
-
-#nav a.router-link-exact-active {
 }
 </style>

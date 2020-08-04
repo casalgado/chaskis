@@ -1,12 +1,20 @@
 <template>
   <div id="page-container">
     <div class="page-content">
-      <h2 id="title">
-        {{ tab.title }}
+      <h2 id="page-title">
+        {{ title }}
       </h2>
-      <p id="main-text">
-        {{ tab.mainText }}
-      </p>
+      <div id="page-text">
+        <p v-html="tab.mainText"></p>
+      </div>
+
+      <div id="page-image">
+        <img src="../assets/main1img.svg" alt="" />
+      </div>
+      <div id="page-footer">
+        <button v-if="tab.buttonText">{{ tab.buttonText }}</button>
+        <p id="footer-text" v-else>{{ tab.footerText }}</p>
+      </div>
     </div>
     <img :src="src" alt="" />
   </div>
@@ -28,17 +36,18 @@ export default {
         return require(`../assets/${this.page.backgroundInactive}`);
       }
     },
+    title: function() {
+      return this.tab.title.toUpperCase();
+    },
   },
 };
 </script>
 
 <style scoped>
-* {
-  border: 1px solid black;
-}
 img {
   display: block;
 }
+
 .page-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,22 +61,65 @@ img {
   position: relative;
 }
 
-#title {
+/* font-family: "Merriweather", serif; */
+
+#page-title {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: lighter;
   grid-column: span 2;
+  align-self: center;
+  justify-self: middle;
 }
 
-#main-text {
+#page-text,
+#footer-text {
+  font-family: "Special Elite", cursive;
+}
+
+#page-text {
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  position: relative;
 }
 
-#main-text::-webkit-scrollbar {
-  background: rgb(190, 148, 91) !important;
+#page-text p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#page-text::-webkit-scrollbar {
   border-radius: 5px;
 }
 
-#main-text::-webkit-scrollbar-thumb {
-  background: rgb(150, 117, 71) !important;
+#page-text::-webkit-scrollbar-thumb {
   border-radius: 5px;
+}
+
+#page-image {
+  margin: 10px;
+}
+
+#page-footer {
+  grid-column: span 2;
+  align-self: center;
+  justify-self: middle;
+}
+
+#page-footer button {
+  border-radius: 25px;
+  background-color: #0e3a01;
+  padding: 15px 25px 15px 25px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+#page-footer button:hover {
+  background-color: #092701;
 }
 </style>

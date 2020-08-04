@@ -10,6 +10,16 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/registro",
+    name: "SignIn",
+    component: () => import("@/views/SignIn.vue"),
+  },
+  {
+    path: "/upload",
+    name: "UploadMedia",
+    component: () => import("@/views/UploadMedia.vue"),
+  },
 ];
 
 const router = new VueRouter({

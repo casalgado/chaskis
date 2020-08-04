@@ -3,6 +3,7 @@
     <TheBinderTab
       :content="content.tab1"
       :active="active == 'tab1'"
+      :border="Boolean(active)"
       @click.native="activate('tab1')"
       class="tab"
     />
@@ -16,12 +17,14 @@
     <TheBinderTab
       :content="content.tab2"
       :active="active == 'tab2'"
+      :border="Boolean(active)"
       @click.native="activate('tab2')"
       class="tab"
     />
     <TheBinderTab
       :content="content.tab3"
       :active="active == 'tab3'"
+      :border="Boolean(active)"
       @click.native="activate('tab3')"
       class="tab"
     />
@@ -85,5 +88,8 @@ export default {
 
 .tab {
   cursor: pointer;
+  position: relative;
+  left: 2px;
+  z-index: 2;
 }
 </style>

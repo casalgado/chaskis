@@ -1,6 +1,7 @@
 <template>
-  <div class="tab">
+  <div class="tab hide-border">
     <img :src="src" alt="" />
+    <div v-if="!active && border" class="fake-border"></div>
   </div>
 </template>
 
@@ -10,6 +11,7 @@ export default {
   props: {
     content: Object,
     active: Boolean,
+    border: Boolean,
   },
   computed: {
     src: function() {
@@ -26,7 +28,15 @@ export default {
 <style scoped>
 img {
   width: 100%;
-
   display: block;
+}
+
+.fake-border {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0px;
+  height: 100%;
+  border: 1px solid rgb(59, 41, 34);
 }
 </style>

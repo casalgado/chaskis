@@ -15,6 +15,5 @@ export default {
 #home {
   width: 70%;
   margin: 0 auto;
-  background-color: papayawhip;
 }
 </style>
