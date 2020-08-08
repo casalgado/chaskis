@@ -21,4 +21,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
+button {
+  border-radius: 25px;
+  background-color: #0e3a01;
+  padding: 5px 25px 5px 25px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: 120%;
+}
+
+button:hover {
+  background-color: #092701;
+}
 </style>

@@ -108,18 +108,4 @@ img {
   align-self: center;
   justify-self: middle;
 }
-
-#page-footer button {
-  border-radius: 25px;
-  background-color: #0e3a01;
-  padding: 15px 25px 15px 25px;
-  color: whitesmoke;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-}
-
-#page-footer button:hover {
-  background-color: #092701;
-}
 </style>
