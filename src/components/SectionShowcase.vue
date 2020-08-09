@@ -1,11 +1,11 @@
 <template>
   <div class="sc-container">
-    <div class="sc-header">
-      <h2>Blog</h2>
-    </div>
+    <h1 class="sc-header main-title">
+      Blog
+    </h1>
     <div class="sc-content">
-      <p>{{ content.title }} {{ content.subtitle }}</p>
-      <p>{{ content.introduction }}</p>
+      <h2 class="content-title">{{ content.title }} {{ content.subtitle }}</h2>
+      <p class="content-text">{{ content.introduction }}</p>
     </div>
     <div class="actions">
       <button>leer poema</button>
@@ -27,10 +27,25 @@ export default {
 <style scoped>
 .sc-container {
   background-color: rgb(144, 181, 67);
+  border: 1px solid rgb(59, 41, 34);
+  margin-top: 15px;
 }
 
 .sc-header {
   background-color: rgb(185, 137, 86);
+  margin-top: 0px;
+  border-bottom: 1px solid rgb(59, 41, 34);
+}
+
+.content-title {
+  font-family: "Special Elite", cursive;
+}
+
+.content-text {
+  font-family: "Merriweather", serif;
+  text-align: justify;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .sc-container,
@@ -42,5 +57,9 @@ export default {
 .sc-container {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+.actions button {
+  margin: 15px;
 }
 </style>

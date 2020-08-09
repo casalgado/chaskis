@@ -22,6 +22,15 @@ export default {
   text-align: center;
 }
 
+.main-title {
+  font-family: "Sue Ellen Francisco", cursive;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: rgb(233, 223, 214);
+}
+
 button {
   border-radius: 25px;
   background-color: #0e3a01;
@@ -36,5 +45,21 @@ button {
 
 button:hover {
   background-color: #092701;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+}
+
+*:active,
+*:focus {
+  -moz-outline-style: none;
+  outline-style: none;
+  outline: none;
 }
 </style>

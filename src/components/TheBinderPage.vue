@@ -1,9 +1,9 @@
 <template>
   <div id="page-container">
     <div class="page-content">
-      <h2 id="page-title">
+      <h1 id="page-title" class="main-title">
         {{ title }}
-      </h2>
+      </h1>
       <div id="page-text">
         <p v-html="tab.mainText"></p>
       </div>
@@ -64,8 +64,6 @@ img {
 /* font-family: "Merriweather", serif; */
 
 #page-title {
-  font-family: "Sue Ellen Francisco", cursive;
-  font-weight: lighter;
   grid-column: span 2;
   align-self: center;
   justify-self: middle;
