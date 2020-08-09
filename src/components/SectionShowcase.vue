@@ -28,9 +28,9 @@ export default {
 .sc-container {
   background-color: rgb(144, 181, 67);
   border: 1px solid rgb(59, 41, 34);
-  margin-top: 15px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-top: 45px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .sc-header {
