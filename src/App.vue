@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <TheNavBar />
+    <TheHeader />
     <router-view />
   </div>
 </template>
 <script>
-import TheNavBar from "./components/TheNavBar";
+import TheHeader from "./components/TheHeader";
 export default {
   name: "App",
-  components: { TheNavBar },
+  components: { TheHeader },
 };
 </script>
 <style>
@@ -29,6 +29,7 @@ export default {
 
 body {
   background-color: rgb(233, 223, 214);
+  margin: 0px;
 }
 
 button {
