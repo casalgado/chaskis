@@ -1,6 +1,6 @@
 <template>
   <div id="header-container">
-    <video width="100%" autoplay>
+    <video width="100%" autoplay muted>
       <source src="../assets/chaskis-animation.mp4" type="video/mp4" />
     </video>
     <TheNavBar />
