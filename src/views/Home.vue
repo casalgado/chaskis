@@ -26,7 +26,9 @@ export default {
 </script>
 <style scoped>
 #home {
-  width: 70%;
+  background-color: rgb(233, 223, 214);
+  width: 100%;
+  padding-top: 15px;
   margin: 0 auto;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="header-container">
     <video width="100%" autoplay>
       <source src="../assets/chaskis-animation.mp4" type="video/mp4" />
     </video>
@@ -15,4 +15,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+#header-container {
+  padding-top: 33%;
+}
+
+video {
+  position: fixed;
+  top: -13%;
+  left: 0px;
+  z-index: -99;
+}
+</style>

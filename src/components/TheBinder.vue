@@ -78,6 +78,8 @@ export default {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: auto auto auto;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .page {
