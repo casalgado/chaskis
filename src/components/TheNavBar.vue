@@ -1,9 +1,7 @@
 <template>
   <vue-position-sticky :offsetTop="0">
-
-      <router-link to="/">HOME</router-link> |
-      <router-link to="/">BLOG</router-link>
-    </div>
+    <router-link to="/">HOME</router-link> |
+    <router-link to="/">BLOG</router-link>
   </vue-position-sticky>
 </template>
 
