@@ -1,15 +1,8 @@
 <template>
   <vue-position-sticky :offsetTop="0">
-    <div
-      id="nav"
-      @click="
-        show = !show;
-        navBorder();
-      "
-    >
+
       <router-link to="/">HOME</router-link> |
       <router-link to="/">BLOG</router-link>
-      <div>{{ show }}</div>
     </div>
   </vue-position-sticky>
 </template>
