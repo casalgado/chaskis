@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <TheHeader />
-    <router-view />
+    <router-view id="rv" />
     <TheFooter />
   </div>
 </template>
@@ -32,6 +32,10 @@ export default {
 body {
   background-color: rgb(233, 223, 214);
   margin: 0px;
+}
+
+#rv {
+  background-color: rgb(233, 223, 214);
 }
 
 button {

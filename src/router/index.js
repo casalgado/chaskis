@@ -20,6 +20,11 @@ const routes = [
     name: "UploadMedia",
     component: () => import("@/views/UploadMedia.vue"),
   },
+  {
+    path: "/blog/single",
+    name: "PostSingle",
+    component: () => import("@/views/PostSingle.vue"),
+  },
 ];
 
 const router = new VueRouter({
